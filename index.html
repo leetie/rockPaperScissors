@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+</head>
+<body>
+
+
+    <script>
+
+        //Choices for Computer
+        var choices = [
+            "rock",
+            "paper",
+            "scissors",
+        ];
+
+        let score = 0;
+        let playerScore = 0;
+        
+        
+       //Compares user and computer choice and outputs a win/loss/tie result 
+        function playRound(message, string) {   
+
+           
+            
+            var playerChoice = prompt("Pick Rock, Paper, or Scissors.").toLowerCase();
+
+            //if player choice is not valid, ends function
+            if (playerChoice != "paper" &&
+                playerChoice != "rock"  &&
+                playerChoice != "scissors") {
+                alert("Choose only rock, paper, or scissors!")
+                return 
+            }   
+            
+           /* playerChoice !== "paper" ||
+                             "rock"  ||
+                             "scissors" ? return alert("Choose only rock, paper, or scissors!") : continue;  */
+
+            //chooses random choice from choices array
+            
+            var computerChoice = choices[Math.floor(Math.random()*choices.length)];
+
+            if (computerChoice === "rock" && playerChoice === "scissors") {
+                var result = "lose";
+                console.log(result, computerChoice, playerChoice);
+                ++score
+                return "You lose! " + computerChoice + " beats " + playerChoice + "."
+                
+            
+            
+            }
+
+            else if (computerChoice === "scissors" && playerChoice === "paper") {
+                var result = "lose";
+                console.log(result, computerChoice, playerChoice);
+                ++score
+                return "You lose! " + computerChoice + " beats " + playerChoice + "." 
+               
+            }
+
+            else if (computerChoice === "paper" && playerChoice === "rock") {
+                var result = "lose";
+                console.log(result, computerChoice);
+                ++score
+                return "You lose! " + computerChoice + " beats " + playerChoice + "." ;
+            }
+
+            else if (computerChoice === playerChoice) {
+                var result = "tie";
+                console.log(result, computerChoice, playerChoice);
+                return "It's a tie!"
+            }
+
+            
+
+            else {
+                var result = "win";
+                console.log(result, computerChoice, playerChoice);
+                ++playerScore
+                return "You win! " + playerChoice + " beats " + computerChoice + ".";
+            }       
+            
+        }
+
+
+
+     
+
+
+        //main game loop. completes when either score reaches 5 
+        function game() {
+                var running = true
+
+
+                while (score < 5 && playerScore < 5) {
+                    playRound();
+                    alert("Player score " + playerScore + " ---------- " + score + " Computer Score" );
+                }
+
+                //Code below resets score variable, ends game, and returns win/loss alert
+                if (score == 5) {
+                    running = false
+                    var playerScore = 0;
+                    var score = 0;
+                    return alert("You lose!")
+                }
+
+                else if (playerScore == 5) {
+                    running = false
+                    var playerScore = 0;
+                    var score = 0;
+                    return alert("You win!")
+                }
+            }
+        
+        
+        
+        
+        
+        function test() {
+            return computerChoice;
+        }
+
+
+     
+        
+        </script>
+
+
+
+</body>
+
+
+</html>
