@@ -15,8 +15,8 @@
             "scissors",
         ];
 
-        let score = 0;
-        let playerScore = 0;
+        var score = 0;
+        var playerScore = 0;
         
         
        //Compares user and computer choice and outputs a win/loss/tie result 
@@ -62,7 +62,7 @@
 
             else if (computerChoice === "paper" && playerChoice === "rock") {
                 var result = "lose";
-                console.log(result, computerChoice);
+                console.log(result, computerChoice, playerChoice);
                 ++score
                 return "You lose! " + computerChoice + " beats " + playerChoice + "." ;
             }
@@ -92,7 +92,8 @@
         //main game loop. completes when either score reaches 5 
         function game() {
                 var running = true
-
+                score = 0;
+                playerScore = 0;
 
                 while (score < 5 && playerScore < 5) {
                     playRound();
@@ -102,15 +103,15 @@
                 //Code below resets score variable, ends game, and returns win/loss alert
                 if (score == 5) {
                     running = false
-                    var playerScore = 0;
-                    var score = 0;
+                    playerScore = 0;
+                    score = 0;
                     return alert("You lose!")
                 }
 
                 else if (playerScore == 5) {
                     running = false
-                    var playerScore = 0;
-                    var score = 0;
+                    playerScore = 0;
+                    score = 0;
                     return alert("You win!")
                 }
             }
