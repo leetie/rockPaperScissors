@@ -3,8 +3,8 @@ body {
     text-align: center;
     background-image: url(https://webstockreview.net/images600_/caveman-clipart-transparent-2.png);
     background-color: gray;
-    height: 80%;
-    width: 100%;
+    height: auto;
+    width: auto;
     
 }
 
@@ -13,7 +13,7 @@ body {
     border-radius: 1.1em;
     margin-top: 3em;
     background-color: red;
-    max-width: max-content;
+    max-width: max-content
     
     
 }
@@ -24,8 +24,7 @@ body {
 }
 
 footer {
-    text-align: bottom;
-    font-size: .5em;
-    height: 20%;
-    width: 100%;
+    bottom: 0;
+    position: absolute;
+    color: white;
 }
