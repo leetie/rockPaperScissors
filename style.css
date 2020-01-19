@@ -13,7 +13,8 @@ body {
     border-radius: 1.1em;
     margin-top: 3em;
     background-color: red;
-    max-width: max-content
+    max-width: max-content;
+    font-size: 3em;
     
     
 }
@@ -27,4 +28,10 @@ footer {
     bottom: 0;
     position: absolute;
     color: white;
+}
+
+a {
+   background-color: rgb(77, 89, 99); 
+   font-weight: bold;
+   color: black;
 }
