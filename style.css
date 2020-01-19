@@ -9,10 +9,11 @@ body {
 }
 
 #startButton {
-    padding: 3em;
+    padding: 6em;
     border-radius: 1.1em;
     margin-top: 3em;
     background-color: red;
+    max-width: max-content;
     
     
 }
