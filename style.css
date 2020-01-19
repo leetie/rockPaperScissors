@@ -1,0 +1,30 @@
+body {
+    font-family: 'Rubik', sans-serif;
+    text-align: center;
+    background-image: url(https://webstockreview.net/images600_/caveman-clipart-transparent-2.png);
+    background-color: gray;
+    height: 80%;
+    width: 100%;
+    
+}
+
+#startButton {
+    padding: 3em;
+    border-radius: 1.1em;
+    margin-top: 3em;
+    background-color: red;
+    
+    
+}
+
+#startButton:hover {
+    box-shadow: 0px 1px 4px .5px rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+footer {
+    text-align: bottom;
+    font-size: .5em;
+    height: 20%;
+    width: 100%;
+}
