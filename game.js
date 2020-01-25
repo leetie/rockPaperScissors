@@ -104,7 +104,7 @@ function playRound() {
                     result = "lose";
                     console.log(result, computerChoice, playerChoice);
                     ++score
-                    message = "You lose! " + computerChoice + " beats " + playerChoice + ".";
+                    message = "You lose! Computer picks " + computerChoice + ", you picked " + playerChoice + ".";
                     console.log(message);
                     result_div.innerText = message;
                     return message;
@@ -118,7 +118,7 @@ function playRound() {
                     result = "lose";
                     console.log(result, computerChoice, playerChoice);
                     ++score
-                    message = "You lose! " + computerChoice + " beats " + playerChoice + ".";
+                    message = "You lose! Computer picks " + computerChoice + ", you picked " + playerChoice + ".";
                     console.log(message);
                     result_div.innerText = message;
                     return message
@@ -130,7 +130,7 @@ function playRound() {
                     result = "lose";
                     console.log(result, computerChoice, playerChoice);
                     ++score
-                    message = "You lose! " + computerChoice + " beats " + playerChoice + ".";
+                    message = "You lose! Computer picks " + computerChoice + ", you picked " + playerChoice + ".";
                     console.log(message);
                     result_div.innerText = message;
                     return message
@@ -139,7 +139,7 @@ function playRound() {
     else if (computerChoice === playerChoice) {
                     result = "tie";
                     console.log(result, computerChoice, playerChoice);
-                    message = "It's a tie!";
+                    message = "You picked " + playerChoice + ", computer picked " + computerChoice + ", It's a tie!";
                     console.log(message);
                     result_div.innerText = message;
                     return message
@@ -151,7 +151,7 @@ function playRound() {
                     result = "win";
                     console.log(result, computerChoice, playerChoice);
                     ++playerScore
-                    message = "You win! " + playerChoice + " beats " + computerChoice + ".";
+                    message = "You win! You picked " + playerChoice + ", computer picked " + computerChoice + ".";
                     console.log(message);
                     result_div.innerText = message;
                     return message
