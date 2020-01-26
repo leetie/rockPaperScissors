@@ -1,10 +1,17 @@
 body {
     font-family: 'Rubik', sans-serif;
     text-align: center;
-    background-image: url(https://webstockreview.net/images600_/caveman-clipart-transparent-2.png);
-    background-color: gray;
-    height: auto;
-    width: auto;
+    
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-image: linear-gradient(blue, pink);
+    position: relative;
+    width: 100%;
+    /*background-image: url(cottoncandy.png);*/
+    padding-bottom: 50%;
+    
+
+    
     
 }
 
@@ -12,8 +19,9 @@ body {
     
     border-radius: 1.1em;
     margin-top: 1.5em;
-    background-color: red;
+    background-color: blueviolet;
     border-color: black;
+    
     
     font-size: 2em;
     
