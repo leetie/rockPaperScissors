@@ -1,31 +1,21 @@
 body {
     font-family: 'Rubik', sans-serif;
     text-align: center;
-    
     background-repeat: no-repeat;
-    background-size: auto;
-    background-image: linear-gradient(blue, pink);
-    position: relative;
-    width: 100%;
-    /*background-image: url(cottoncandy.png);*/
-    padding-bottom: 50%;
-    
-
-    
-    
-}
+    background-image: linear-gradient(red, orange, yellow, green, blue, indigo, violet);
+    }
 
 .button {
-    
     border-radius: 1.1em;
     margin-top: 1.5em;
     background-color: blueviolet;
     border-color: black;
-    
-    
     font-size: 2em;
-    
-    
+    text-shadow: 
+    -1px -1px 0 white,
+    1px -1px 0 white,
+    -1px 1px 0 white,
+    1px 1px 0 white;
 }
 
 .button:hover {
@@ -44,3 +34,20 @@ a {
    font-weight: bold;
    color: black;
 }
+
+#scoreDiv {
+    display: inline-flex;
+    justify-content: space-around;
+    font-size: 3rem;
+    font-weight: bold;
+    text-shadow: 
+    -1px -1px 0 white,
+    1px -1px 0 white,
+    -1px 1px 0 white,
+    1px 1px 0 white;
+}
+
+#playerScore {
+    padding-left: 20px;
+}
+
